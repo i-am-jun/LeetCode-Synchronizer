@@ -108,6 +108,8 @@ def sync_github(commits, submissions):
                 ext = "sql"
             elif submission["language"] == "Bash":
                 ext = "sh"
+            elif submission["language"] == "JavaScript":
+                ext = "js"
             else:
                 raise Exception(f"Unknown language : {submission['language']}")
 
