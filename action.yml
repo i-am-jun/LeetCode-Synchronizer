@@ -19,12 +19,12 @@ runs:
   using: "composite"
   steps:
     - name: Checkout GitHub Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6.0.2
       with:
         fetch-depth: 0
 
     - name: Install Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6.2.0
       with:
         python-version: "3.x"
 
